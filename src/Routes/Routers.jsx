@@ -15,7 +15,9 @@ export const router = createBrowserRouter([
         },
         {
           path:"Apps",
+          loader:()=>fetch("Apps.json").then(res=>res.json()),
           Component:Apps,
+          hydrateFallbackElement:<h2>Loading...</h2>
         },
         {
           path:"Installation",

@@ -7,7 +7,7 @@ const Roots = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="pt-20 bg-gray-100 mb-10">
+            <div className="pt-20 bg-gray-100 mt-10">
 
             <Outlet></Outlet>
             </div>
