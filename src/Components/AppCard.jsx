@@ -1,18 +1,21 @@
 import React from 'react';
 import { BiSolidStar } from 'react-icons/bi';
 import { FaDownload } from 'react-icons/fa6';
+import { Link} from 'react-router';
+
 
 const AppCard = ({ App }) => {
   
-  const {downloads,image,companyName,topRating} = App
-
+  const {downloads,image,companyName,ratingAvg,id} = App
 
   const formattedDownloads = Intl.NumberFormat("en-us", {
     notation: "compact",
   }).format(downloads);
 
   return (
-    <div className=" bg-white w-80 h-auto rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-100">
+  <Link to={`/AppDetails/${id}`}>
+  
+  <div className=" bg-white w-80 h-auto rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-100">
     
       <div className="flex justify-center p-3">
         <img 
@@ -38,11 +41,17 @@ const AppCard = ({ App }) => {
        
           <div className="flex items-center text-orange-500 gap-1 text-sm font-medium">
             <BiSolidStar />
-            <span>{topRating.name.charAt(0)}</span>
+            <span>{ratingAvg}</span>
           </div>
         </div>
       </div>
     </div>
+  
+  
+  
+  
+  
+  </Link> 
   );
 };
 
