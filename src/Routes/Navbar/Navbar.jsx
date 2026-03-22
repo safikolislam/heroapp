@@ -11,7 +11,7 @@ const Navbar = () => {
     setToggle(!toggle)
   }
     return (
-        <div className=  " top-0 left-0 shadow-md px-5 py-5  fixed w-full backdrop-blur-md bg-white/20 flex justify-between items-center">
+        <div className=  "z-30 top-0 left-0 shadow-md px-5 py-5  fixed w-full backdrop-blur-md bg-white/20 flex justify-between items-center">
          <Link to="/"><div className="flex items-center">
             <img className="w-10" src={logo} alt="logo" />
            <h2 className="font-semibold text-xl">Hero Apps</h2>

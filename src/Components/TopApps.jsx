@@ -1,11 +1,14 @@
 
-import { useLoaderData, useNavigate } from 'react-router';
+import { useLoaderData, useNavigate, } from 'react-router';
 import AppCard from './AppCard';
+import AnimationLoading from './AnimationLoading';
 const TopApps = () => {
 
     const topAppData = useLoaderData();
-     console.log(topAppData);
-     const navigate = useNavigate()
+    
+     const navigate = useNavigate();
+    
+ 
     return (
         <div className="mt-20 space-y-10">
             <h2 className="font-bold text-3xl text-center">Trending Apps</h2>

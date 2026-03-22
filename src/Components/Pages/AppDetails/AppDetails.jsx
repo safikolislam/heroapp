@@ -3,14 +3,40 @@ import downloadIcon from "../../../assets/icon-downloads.png"
 import ratingIcon  from "../../../assets/icon-ratings.png"
 import reviewIcon from "../../../assets/icon-review.png"
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+
+
 
 const AppDetails = () => {
  const allApps = useLoaderData();
- console.log(allApps);
+
  const {id} = useParams();
+
+
  const specificApp = allApps.find(app=>app.id === parseInt(id));
 const {image,title,ratings,downloads,description,companyName,
   ratingAvg,reviews,size} = specificApp;
+
+const [installed,setInstalled] = useState(false)
+
+useEffect(()=>{
+  const savedApps = JSON.parse(localStorage.getItem("Installed-apps") || "[]")
+  const exists = savedApps.find((app)=>app.id===parseInt(id));
+  if(exists)setInstalled(true)
+},[id])
+
+const handleInstall = () => {
+  const savedApps = JSON.parse(localStorage.getItem("Installed-apps") || "[]");
+ if(!savedApps.find(app=>app.id === specificApp.id)){
+ 
+  const updatedApps = [...savedApps,specificApp];
+  localStorage.setItem("Installed-apps",JSON.stringify(updatedApps))
+  setInstalled(true)
+ toast.success(`${title} Successfully Installed `)
+ }
+}
+
   const formattedDownloads = Intl.NumberFormat("en-us", {
    notation: "compact",
   }).format(downloads);
@@ -19,6 +45,8 @@ const {image,title,ratings,downloads,description,companyName,
   const formattedReviews = Intl.NumberFormat("en-us", {
     notation: "compact",
   }).format(reviews);
+
+if(!specificApp) return <p>loading...</p>
     return (
         <div className="min-h-screen">
            <div className="flex gap-10 flex-col md:flex-row p-5">
@@ -46,9 +74,10 @@ const {image,title,ratings,downloads,description,companyName,
                      <h1 className="font-bold text-2xl">{formattedReviews}</h1>
                     </div>
                     </div>
-           <button className="btn bg-[#00D390] text-white rounded-md p-5 mt-5"> 
-            Install Now ({ size} MB)</button>
+           <button onClick={handleInstall}  disabled={installed}  className="btn bg-[#00D390] text-white rounded-md p-5 mt-5"> 
+          {installed ? "installed" : `install ( ${size} MB)`}</button>
                 </div>
+     
            </div>
            <hr className="text-gray-400 mx-5"></hr>
            <ResponsiveContainer className="p-5" width="100%" height={300}>

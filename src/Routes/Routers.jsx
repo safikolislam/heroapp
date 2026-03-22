@@ -5,6 +5,7 @@ import Apps from "../Components/Pages/Apps/Apps";
 import Installation from "../Components/Pages/Installation/Installation";
 import NotFound from "../Components/NotFound";
 import AppDetails from "../Components/Pages/AppDetails/AppDetails";
+import AnimationLoading from "../Components/AnimationLoading";
 
 
 
@@ -20,24 +21,24 @@ export const router = createBrowserRouter([
         {
             index:true,
               loader:()=>fetch("Apps.json").then(res=>res.json()),
-                  hydrateFallbackElement:<h2>Loading...</h2>,
+                  hydrateFallbackElement:<AnimationLoading></AnimationLoading>,
             Component:Home
         },
         {
           path:"Apps",
           loader:()=>fetch("Apps.json").then(res=>res.json()),
           Component:Apps,
-          hydrateFallbackElement:<h2>Loading...</h2>
+          hydrateFallbackElement:<AnimationLoading></AnimationLoading>
         },
           {
             path: "AppDetails/:id",
               loader:()=>fetch("/Apps.json").then(res=>res.json()),
               Component:AppDetails,
-              hydrateFallbackElement:<h2>Loading...</h2>
+              hydrateFallbackElement:<AnimationLoading></AnimationLoading>
           },
         {
           path:"Installation",
-          Component:Installation
+          Component:Installation,
         }
      
      
