@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/3652/3652191.png",
+    "image": "https://i.postimg.cc/YjB4xWk6/fitness.png",
     "title": "FitTrack Pro",
     "companyName": "HealthSync Technologies",
     "id": 1,
@@ -19,7 +19,7 @@
     "topRating": { "name": "5 star", "count": 6680 }
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/3403/3403403.png",
+    "image": "https://i.postimg.cc/tJxDBwZL/720.jpg",
     "title": "NovaNotes",
     "companyName": "Pixel Craft Studio",
     "id": 2,
@@ -38,7 +38,7 @@
     "topRating": { "name": "3 star", "count": 3800 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/wallet.png",
+    "image": "https://i.postimg.cc/c4ckPqkX/9883262.jpg",
     "title": "SpendWise",
     "companyName": "FinEdge Solutions",
     "id": 3,
@@ -56,8 +56,8 @@
     ],
     "topRating": { "name": "5 star", "count": 14500 }
   },
-  {
-    "image": "https://img.icons8.com/fluency/200/partly-cloudy-day.png",
+  { 
+     "image" : "https://i.postimg.cc/CMcf2mHJ/images.jpg",
     "title": "CloudCast",
     "companyName": "AtmoTech Inc.",
     "id": 4,
@@ -76,7 +76,7 @@
     "topRating": { "name": "4 star", "count": 15800 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/language.png",
+    "image": "https://i.postimg.cc/7LBfRL0F/unnamed.webp",
     "title": "LinguaLeap",
     "companyName": "Polyglot Labs",
     "id": 5,
@@ -95,7 +95,7 @@
     "topRating": { "name": "5 star", "count": 12200 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/camera.png",
+    "image": "https://i.postimg.cc/hjzP31SZ/unnamed.png",
     "title": "SnapEdit",
     "companyName": "Visionary Apps",
     "id": 6,
@@ -114,7 +114,7 @@
     "topRating": { "name": "5 star", "count": 4200 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/music.png",
+    "image": "https://i.postimg.cc/8cb8y7rJ/download.jpg",
     "title": "BeatFlow",
     "companyName": "SoundWave Studio",
     "id": 7,
@@ -133,7 +133,7 @@
     "topRating": { "name": "5 star", "count": 19200 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/sleeping.png",
+    "image": "https://i.postimg.cc/nhD2Z60P/sleeping.png",
     "title": "SleepZen",
     "companyName": "Mindful Tech Co.",
     "id": 8,
@@ -152,7 +152,7 @@
     "topRating": { "name": "3 star", "count": 2900 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/task.png",
+    "image": "https://i.postimg.cc/0j0K50hH/webpage-list.png",
     "title": "TaskMaster",
     "companyName": "Prodify Labs",
     "id": 9,
@@ -171,7 +171,7 @@
     "topRating": { "name": "5 star", "count": 11000 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/delivery.png",
+    "image": "https://i.postimg.cc/Fsnsy6bV/premium-photo-1683984171269-04c84ee23234.avif",
     "title": "QuickDeliver",
     "companyName": "SwiftMove Inc.",
     "id": 10,
@@ -190,7 +190,7 @@
     "topRating": { "name": "4 star", "count": 4800 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/cooking-book.png",
+    "image": "https://i.postimg.cc/0y0fbpqR/unnamed-(1).png",
     "title": "ChefMate",
     "companyName": "Culinary Digital",
     "id": 11,
@@ -209,7 +209,7 @@
     "topRating": { "name": "5 star", "count": 8000 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/map-marker.png",
+    "image": "https://i.postimg.cc/TPSWww15/images.png",
     "title": "RouteGo",
     "companyName": "NaviTech Solutions",
     "id": 12,
@@ -228,7 +228,7 @@
     "topRating": { "name": "4 star", "count": 12200 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/book-reading.png",
+    "image": "https://i.postimg.cc/XvFQ4T78/images-(2).png",
     "title": "ReadSpark",
     "companyName": "Inkwell Digital",
     "id": 13,
@@ -247,7 +247,7 @@
     "topRating": { "name": "5 star", "count": 4500 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/video-call.png",
+    "image": "https://i.postimg.cc/pXqSSbpP/chat-communication-logo-design-template-vector.jpg",
     "title": "TalkSpace",
     "companyName": "ConnectHub Inc.",
     "id": 14,
@@ -266,7 +266,7 @@
     "topRating": { "name": "3 star", "count": 16400 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/investment-portfolio.png",
+    "image": "https://i.postimg.cc/Z5L52q6d/1200x630wa.jpg",
     "title": "StockPulse",
     "companyName": "MarketEdge Corp.",
     "id": 15,
@@ -285,7 +285,7 @@
     "topRating": { "name": "5 star", "count": 9000 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/yoga.png",
+    "image": "https://i.postimg.cc/8knPg3F3/mental-health.jpg",
     "title": "ZenFlow",
     "companyName": "Inner Peace Apps",
     "id": 16,
@@ -304,7 +304,7 @@
     "topRating": { "name": "5 star", "count": 5000 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/shopping-cart.png",
+    "image": "https://i.postimg.cc/mkdPv2vD/cartzap.png",
     "title": "CartZap",
     "companyName": "ShopFast Global",
     "id": 17,
@@ -323,7 +323,7 @@
     "topRating": { "name": "4 star", "count": 21400 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/brain.png",
+    "image": "https://i.postimg.cc/028Ghzwp/1200x630wa.png",
     "title": "MindQuiz",
     "companyName": "BrainBoost Labs",
     "id": 18,
@@ -342,7 +342,7 @@
     "topRating": { "name": "4 star", "count": 5700 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/dog.png",
+    "image": "https://i.postimg.cc/qBKZp6qw/images-(1).png",
     "title": "PetCare Plus",
     "companyName": "FurFamily Tech",
     "id": 19,
@@ -361,7 +361,7 @@
     "topRating": { "name": "5 star", "count": 3400 }
   },
   {
-    "image": "https://img.icons8.com/fluency/200/monitor.png",
+    "image": "https://i.postimg.cc/jdmVMYWb/images-(1).jpg",
     "title": "FocusDesk",
     "companyName": "DeepWork Digital",
     "id": 20,

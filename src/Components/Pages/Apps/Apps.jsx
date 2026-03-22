@@ -34,7 +34,7 @@ const Apps = () => {
                 <div className="flex items-center gap-2 px-3 py-1 border rounded-md
                  focus-within:border-purple-600 mr-15 lg:mr-25">
                     <CiSearch className="text-xl" />
-                    <input onChange={handleSearch} className="focus:outline-none" placeholder="Search..." type="search" value={search} />
+                    <input onChange={handleSearch} className="focus:outline-none" placeholder="Search..." type="search" value={search} id="" />
                 </div>
             </div>
         {isSearching   ? (
@@ -48,7 +48,7 @@ const Apps = () => {
         }
           </div>
         ) : (
-            <div className="text-center w-full py-20">
+            <div className="text-center w-full py-20 space-y-2">
         <h2 className="text-3xl font-bold text-gray-300">No App Found!</h2>
         <p className="text-gray-400">Try searching for another Apps.</p>
     </div>

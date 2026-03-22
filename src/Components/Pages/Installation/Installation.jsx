@@ -5,8 +5,10 @@ import reviewsIcon from "../../../assets/icon-review.png";
 import appError from "../../../assets/App-Error.png"
 import { toast } from 'react-toastify';
 import { Link } from 'react-router';
+import AnimationLoading from '../../AnimationLoading';
 
 const Installation = () => {
+   const [loading,setLoading] = useState(true)
     const [myApps, setMyApps] = useState([]);
     const [sort,setSort] = useState("");
     const handleSort = (type) =>{
@@ -20,17 +22,21 @@ const Installation = () => {
                setMyApps(sortedHighToLow)
          }
     }
-
     useEffect(() => {
         const saved = JSON.parse(localStorage.getItem("Installed-apps")) || [];
-        setMyApps(saved);
+         Promise.resolve().then(()=>{
+            setMyApps(saved);
+            setLoading(false)
+         })
     }, []);
+   
        const handleRemove = (id,title) =>{
          const remainingApps = myApps.filter(app=>app.id !=id);
          setMyApps(remainingApps)
          localStorage.setItem("Installed-apps",JSON.stringify(remainingApps))
          toast.success(` ${title} successfully uninstalled`)
        }
+     if(loading) return <AnimationLoading></AnimationLoading>
     return (
         <div className="min-h-screen p-4">
             <div className="text-center space-y-5">

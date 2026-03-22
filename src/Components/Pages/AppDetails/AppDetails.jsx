@@ -90,7 +90,7 @@ if(!specificApp) return <p>loading...</p>
            </ResponsiveContainer>
            <hr className="mt-10 m-4 text-gray-400 "></hr>
            <h3 className="font-bold ml-5">Description</h3>
-           <p className="ml-5 text-gray-400">{description}</p>
+           <p className="ml-5 text-gray-400 pb-5">{description}</p>
         </div>
     );
 };

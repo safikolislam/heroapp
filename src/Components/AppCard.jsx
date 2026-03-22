@@ -6,7 +6,7 @@ import { Link} from 'react-router';
 
 const AppCard = ({ App }) => {
   
-  const {downloads,image,companyName,ratingAvg,id} = App
+  const {downloads,image,ratingAvg,id,title} = App
 
   const formattedDownloads = Intl.NumberFormat("en-us", {
     notation: "compact",
@@ -21,14 +21,14 @@ const AppCard = ({ App }) => {
         <img 
           className="w-full h-40 object-cover rounded-lg" 
           src={image} 
-          alt={`${companyName} logo`} 
+          alt={`${title} logo`} 
         />
       </div>
 
      
       <div className="px-4 pb-4">
         <h2 className="font-bold text-lg text-gray-800 truncate">
-          {companyName}
+          {title}
         </h2>
         
         <div className="flex justify-between items-center mt-3">

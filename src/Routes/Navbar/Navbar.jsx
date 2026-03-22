@@ -20,6 +20,7 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/Apps">Apps</NavLink>
         <NavLink to="/Installation">Installation</NavLink>
+        <NavLink to="/Lost">Lost</NavLink>
        </div>
        <button className="btn bg-[#632EE3]  items-center text-white rounded-md lg:block hidden"><div className="flex items-center gap-2"><FaGithub /> Contribute
         </div></button>
@@ -34,6 +35,7 @@ const Navbar = () => {
     <NavLink  to="/" >Home</NavLink>
     <NavLink  to="/Apps" >Apps</NavLink>
     <NavLink  to="/Installation" >Installation</NavLink>
+    <NavLink  to="/Lost" >Lost</NavLink>
     <button className=" mt-3 btn bg-[#632EE3] text-white rounded-md  flex items-center gap-2 ml-5"><FaGithub /> Contribute</button>
     
     </div>}
