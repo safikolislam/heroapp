@@ -58,13 +58,15 @@ const Installation = () => {
 
                 {myApps.length > 0 ? (
                     myApps.map((app) => (
-                        <div key={app.id} className="bg-white m-5 rounded-md p-4 flex gap-5 items-center shadow-sm">
-                            <img className="w-16 h-16 object-cover rounded" src={app.image} alt={app.title} />
+                        <div key={app.id} className="bg-white mx-2 my-4 sm:mx-5 rounded-xl p-4 flex gap-5 items-center shadow-md border-gray-50">
+                           <div className="shrink-0 bg-gray-50 p-2 rounded-lg">
+                             <img className="w-16 h-16 object-contain" src={app.image} alt={app.title} />
+                           </div>
                             
-                            <div className="flex justify-between items-center w-full">
-                                <div>
-                                    <h2 className="font-bold">{app.title}</h2>
-                                    <div className="grid grid-cols-3 gap-4 mt-1">
+                            <div className="flex flex-col md:flex-row items-start mt-4 justify-between md:items-center w-full gap-4">
+                                <div className="space-y-1">
+                                    <h2 className="font-bold ">{app.title}</h2>
+                                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
                                      
                                             <div  className="flex items-center gap-2">
                                                 <img width={15} src={downLoadIcon} alt="icon" />
